@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_background01"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/imageviewTv"
+            android:layout_width="300dp"
+            android:layout_alignParentStart="true"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/companyIv"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/image1"
+            android:textColorHint="@color/white" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/mainLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarRl"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_button01"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Моя заявка"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="32sp"/>
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbarRl"
+            android:textSize="24sp"
+            android:layout_marginLeft="30dp"
+            android:text="Имя"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/surnameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTv"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:text="Фамилия"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/dobTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/surnameTv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Дата рождения"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textColorHint="@color/white" />
+        <TextView
+            android:id="@+id/mobileTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dobTv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Мобильный номер"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobileTv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Электронный адрес"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/companyTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailTv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Компания"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/companyTv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Загруженность"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/priceTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeTv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Ставка"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/categoryTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceTv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Специальность"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainLl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_button01"
+        android:fontFamily="sans-serif-light"
+        android:paddingVertical="10dp"
+        android:text="Отправить заявку"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</RelativeLayout>

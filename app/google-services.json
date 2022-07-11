@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "348351798046",
+    "firebase_url": "https://hirebee-cefdb-default-rtdb.firebaseio.com",
+    "project_id": "hirebee-cefdb",
+    "storage_bucket": "hirebee-cefdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348351798046:android:4ae947a5e8632f9402470f",
+        "android_client_info": {
+          "package_name": "com.example.hirebee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348351798046-u7g2qa1eifmchvo2l3c0j0ing4m6gejs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvj3y8EbgSvf9e9yVFcNDqmpwBqhxoZjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348351798046-u7g2qa1eifmchvo2l3c0j0ing4m6gejs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
